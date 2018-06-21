@@ -144,7 +144,7 @@ let recordCleaner = (obj) => {
    if (obj.accidents[i].atFaultForAccident = true){
       obj.accidents[i].atFaultForAccident = false
     }
-  } return obj
+  } return objgit
 }
 
 
