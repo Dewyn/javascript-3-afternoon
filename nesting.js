@@ -50,7 +50,9 @@ var employees = [
     3. Return the updated employee array.
 */
 
-//Code Here
+function employeeUpdater(){
+  
+}
 
 
 
@@ -96,9 +98,8 @@ var cat = {
     2. Assign fluffy2ndFriend the name of Fluffy's 2nd friend.
 */
 
-//Code Here
-var grumpyActivity;
-var fluffy2ndFriend;
+let grumpyActivity = cat.catFriends[0].activities[1];
+let fluffy2ndFriend = cat.catFriends[1].name;
 
 
 
@@ -138,7 +139,13 @@ var myCar = {
     3. Change atFaultForAccident from true to false.
 */
 
-//Code Here
+let recordCleaner = (obj) => {
+  for(i=0; i < obj.accidents.length; i++){
+   if (obj.accidents[i].atFaultForAccident = true){
+      obj.accidents[i].atFaultForAccident = false
+    }
+  } return obj
+}
 
 
 

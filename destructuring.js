@@ -114,18 +114,19 @@ function largeNumbers({first, second, third}){
 
 function numberGroups({a, b,c}){
 
-var longest = []
-
-longest.push(a,b,c);
-
-var longestArr = a
-
-function cb(element){
-  if(element.length > longestArr){
-    var longestArr = element.length
+  var longest = []
+  
+  longest.push(a,b,c);
+  
+        let holdMe = b
+    for(i=0; i < longest.length; i++){
+  
+      if(longest[i].length > holdMe.length){
+        holdMe=longest[i]
+      }
+    }
+   return holdMe 
   }
-}
-return longest.forEach(cb)
-}
-
-
+  
+  
+  numberGroups(obj)
